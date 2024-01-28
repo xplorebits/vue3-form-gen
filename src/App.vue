@@ -1,5 +1,5 @@
 <script setup>
-import MyComp from './components/MyComp.vue'
+import Vue3FormGen from './components/Vue3FormGen.vue'
 </script>
 
 <template>
@@ -11,7 +11,7 @@ import MyComp from './components/MyComp.vue'
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <MyComp msg="Vite + Vue" />
+  <Vue3FormGen msg="Vite + Vue" />
 </template>
 
 <style scoped>

@@ -1,11 +1,9 @@
 // Import your component
-import MyComp from './components/MyComp.vue'
+import Vue3FormGen from './components/Vue3FormGen.vue';
 
 // Install function executed by Vue.use()
-const install = function(Vue) {
-  if (install.installed) return;
-  install.installed = true;
-  Vue.component('Vue3FormGen', MyComp);
+const install = function(app) {
+  app.component('Vue3FormGen', Vue3FormGen);
 };
 
 // Create module definition for Vue.use()
@@ -13,17 +11,6 @@ const plugin = {
   install,
 };
 
-// To auto-install when vue is found
-let GlobalVue = null;
-if (typeof window !== 'undefined') {
-  GlobalVue = window.Vue;
-} else if (typeof global !== 'undefined') {
-  GlobalVue = global.vue;
-}
-if (GlobalVue) {
-  GlobalVue.use(plugin);
-}
-
-// To allow use as module (npm/webpack/etc.) export component
-export default MyComp;
-export { MyComp, install };
+// Export component by default and plugin as named export
+export default Vue3FormGen;
+export { plugin as Vue3FormGenPlugin };
