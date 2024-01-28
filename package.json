@@ -4,6 +4,14 @@
   "description": "A Vue 3 library for creating, reordering, and exporting dynamic forms with a drag-and-drop interface and JSON schema generation, mirroring popular form-building functionalities.",
   "private": true,
   "type": "module",
+  "main": "dist/vue3-form-gen.umd.js",
+  "module": "dist/vue3-form-gen.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue3-form-gen.es.js",
+      "require": "./dist/vue3-form-gen.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
