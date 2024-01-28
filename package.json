@@ -1,10 +1,20 @@
 {
   "name": "vue3-form-gen",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A Vue 3 library for creating, reordering, and exporting dynamic forms with a drag-and-drop interface and JSON schema generation, mirroring popular form-building functionalities.",
-  "main": "index.js",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.3.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.2",
+    "vite": "^5.0.8"
   },
   "repository": {
     "type": "git",
@@ -15,10 +25,5 @@
     "forms",
     "survey"
   ],
-  "author": "saikksub <saikksub@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/xplorebits/vue3-form-gen/issues"
-  },
   "homepage": "https://github.com/xplorebits/vue3-form-gen#readme"
 }
